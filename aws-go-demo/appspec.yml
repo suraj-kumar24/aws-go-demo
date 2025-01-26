@@ -1,10 +1,10 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: aws-go-demo
     destination: /home/ec2-user/aws-go-demo/
 hooks:
   ApplicationStart:
-    - location: scripts/start_application.sh
+    - location: aws-go-demo/scripts/start_application.sh
       timeout: 300
       runas: ec2-user
