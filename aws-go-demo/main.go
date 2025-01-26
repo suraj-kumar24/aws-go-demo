@@ -16,7 +16,7 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "application/json")
 		json.NewEncoder(w).Encode(Response{
-			Message:   "Hello, World!",
+			Message:   "Hello, World FROM AWS!",
 			FruitList: []string{"apple", "banana", "cherry"},
 			Status:    true,
 		})
